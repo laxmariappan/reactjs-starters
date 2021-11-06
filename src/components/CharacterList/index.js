@@ -1,7 +1,20 @@
+import Performers from './performer';
 export default function CharacterList({
   data,
 }) {
   return (
-    `There are ${data.length} characters to display in the CharacterList component`
+    <>
+{data.map((character, index) => (
+
+   <div key={index}>
+      <h2 className="character">{character.name}</h2>
+      <Performers performers={character.performers} />
+    </div>
+
+
+    ))}
+
+
+    </>
   );
 }

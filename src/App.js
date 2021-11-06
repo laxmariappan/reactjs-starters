@@ -1,5 +1,5 @@
 import './App.css';
-
+import './index.css';
 import CharacterList from './components/CharacterList';
 
 const muppetsData = [
@@ -70,7 +70,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1>ReactJS Starter</h1>
+        <h1>ReactJS Starter - Muppets Data</h1>
       </header>
       <CharacterList
         data={muppetsData}
