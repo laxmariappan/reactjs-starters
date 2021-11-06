@@ -8,6 +8,7 @@ export default function CharacterList({
 
    <div key={index}>
       <h2 className="character">{character.name}</h2>
+      <hr/>
       <Performers performers={character.performers} />
     </div>
 
