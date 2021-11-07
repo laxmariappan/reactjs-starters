@@ -29,7 +29,6 @@ export default function CheckCounter({num}){
     </div>
     <div>
     <progress max="15" value={num}></progress>
-
     </div>
     </>
   )
