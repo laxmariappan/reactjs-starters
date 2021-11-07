@@ -44,6 +44,7 @@ button{
   border: none;
   outline: none;
   font-size: large;
+  font-weight: bold;
   cursor: pointer;
 }
 @keyframes pulse {
