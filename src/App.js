@@ -11,7 +11,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1>ReactJS Starter</h1>
+        <h1>ReactJS Starter Redlight Greenlight</h1>
       </header>
       <RedlightGreenlight
         go={go}
