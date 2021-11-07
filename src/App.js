@@ -5,7 +5,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1>ReactJS Starter</h1>
+        <h1>ReactJS Starter - Countdown</h1>
       </header>
       <Countdown />
       <footer className="App-footer">

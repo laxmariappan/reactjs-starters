@@ -2,9 +2,9 @@ import {
   useEffect,
   useState,
 } from 'react';
-
+import CheckCounter from './checkCounter'
 export default function Countdown() {
-  const [counter, setCounter] = useState(20);
+  const [counter, setCounter] = useState(15);
 
   useEffect(
     () => {
@@ -22,6 +22,11 @@ export default function Countdown() {
   );
 
   return (
-    <h2>{counter}</h2>
+    <>
+    <p><CheckCounter num={counter}/></p>
+    <button onClick={() => setCounter(15)}>
+        Reset Counter
+      </button>
+    </>
   );
 }

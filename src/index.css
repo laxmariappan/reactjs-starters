@@ -11,3 +11,34 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+@keyframes pulse {
+	0% {
+		transform: scale(0.95);
+	}
+
+	70% {
+		transform: scale(1);
+	}
+
+	100% {
+		transform: scale(0.95);
+	}
+}
+.counter{
+  font-size: 2rem;
+  font-weight: bold;
+  transform: scale(1);
+	animation: pulse 2s infinite;
+}
+.green{
+  color:green;
+}
+.gold{
+  color: gold;
+}
+.red{
+  color: red;
+}
+.orange{
+  color:orange;
+}
