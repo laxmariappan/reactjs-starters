@@ -4,19 +4,20 @@ import {
 } from 'react';
 import CheckCounter from './checkCounter'
 export default function Countdown() {
-  const [counter, setCounter] = useState(15);
+  const [counter, setCounter] = useState(20);
 
   useEffect(
     () => {
       if (counter <= 0) {
         return;
       }
-      setTimeout(
+      const timeoutId = setTimeout(
         () => setCounter(
           (n) => n - 1
         ),
         500
       );
+      return () => clearTimeout(timeoutId);
     },
     [counter]
   );
